@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE_edge">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>Home</title>
+    <style>
+        button {
+        background-color: darkblue;
+        color: white;
+        width: 200px;
+        height: 75px;
+        padding: 10px, 20px;
+        border-radius: 5px;
+        font-size: 24px;
+        }
+
+        button:active {
+        background-color: rgb(36, 174, 96);
+        transform: translateY(1px);
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>!Button Clicker Challenge!</h1>
+    <button onclick="incrementCounter()">Click Me!</button>
+    <h3>You clicked the button <span id="clickCount">0</span> times!</h3>
+    <h3>Leaves a little room for improvement...</h3>
+
+    <script>
+        let count = 0;
+        function incrementCounter() {
+        count++;
+        document.getElementById("clickCount").innerText = count;
+        }
+    </script>
+</body>
+</html>
